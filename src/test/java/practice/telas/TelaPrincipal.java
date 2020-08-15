@@ -1,4 +1,4 @@
-package cucumber.telas;
+package practice.telas;
 
 import com.evandrofranca.frameworkautomacao.tela.TelaWeb;
 

@@ -3,7 +3,7 @@
     "line": 3,
     "elements": [
       {
-        "start_timestamp": "2020-08-15T04:14:19.158Z",
+        "start_timestamp": "2020-08-15T23:14:46.682Z",
         "line": 6,
         "name": "Verificar se o sistema permite efetuar login",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 16955000000,
+              "duration": 15485000000,
               "status": "passed"
             },
             "line": 7,
@@ -25,25 +25,25 @@
                   "offset": 19
                 }
               ],
-              "location": "cucumber.steps.StepsDefinition.que_acessei_o_site_com_sucesso(java.lang.String)"
+              "location": "practice.steps.LoginSteps.que_acessei_o_site_com_sucesso(java.lang.String)"
             },
             "keyword": "Dado "
           },
           {
             "result": {
-              "duration": 2415000000,
+              "duration": 2875000000,
               "status": "passed"
             },
             "line": 8,
             "name": "que acessei a tela de login",
             "match": {
-              "location": "cucumber.steps.StepsDefinition.que_acessei_a_tela_de_login()"
+              "location": "practice.steps.LoginSteps.que_acessei_a_tela_de_login()"
             },
             "keyword": "E "
           },
           {
             "result": {
-              "duration": 894000000,
+              "duration": 855000000,
               "status": "passed"
             },
             "line": 9,
@@ -55,13 +55,13 @@
                   "offset": 27
                 }
               ],
-              "location": "cucumber.steps.StepsDefinition.preencho_o_campo_email(java.lang.String)"
+              "location": "practice.steps.LoginSteps.preencho_o_campo_email(java.lang.String)"
             },
             "keyword": "Quando "
           },
           {
             "result": {
-              "duration": 764000000,
+              "duration": 731000000,
               "status": "passed"
             },
             "line": 10,
@@ -73,31 +73,31 @@
                   "offset": 30
                 }
               ],
-              "location": "cucumber.steps.StepsDefinition.preencho_o_campo_password(java.lang.String)"
+              "location": "practice.steps.LoginSteps.preencho_o_campo_password(java.lang.String)"
             },
             "keyword": "E "
           },
           {
             "result": {
-              "duration": 2258000000,
+              "duration": 1899000000,
               "status": "passed"
             },
             "line": 11,
             "name": "clico no botao login",
             "match": {
-              "location": "cucumber.steps.StepsDefinition.clico_no_botao_login()"
+              "location": "practice.steps.LoginSteps.clico_no_botao_login()"
             },
             "keyword": "E "
           },
           {
             "result": {
-              "duration": 612000000,
+              "duration": 653000000,
               "status": "passed"
             },
             "line": 12,
             "name": "o sistema permite o login",
             "match": {
-              "location": "cucumber.steps.StepsDefinition.o_sistema_permite_o_login()"
+              "location": "practice.steps.ValidationSteps.o_sistema_permite_o_login()"
             },
             "keyword": "Entao "
           }
@@ -113,7 +113,7 @@
     "description": "",
     "id": "testar-acesso-ao-site-automation-practice-e-navegação-por-ele",
     "keyword": "Funcionalidade",
-    "uri": "file:src/test/resources/cucumber/features/automation_practice.feature",
+    "uri": "file:src/test/resources/features/automation_practice.feature",
     "tags": []
   }
 ]

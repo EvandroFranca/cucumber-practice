@@ -1,15 +1,22 @@
-package cucumber.steps;
+package practice.steps;
 
 import com.evandrofranca.frameworkautomacao.controle.ControleTeste;
 import com.evandrofranca.frameworkautomacao.controle.Navegador;
-import cucumber.telas.TelaLogin;
-import cucumber.telas.TelaMyAccount;
-import cucumber.telas.TelaPrincipal;
-import io.cucumber.java.pt.Dado;
-import io.cucumber.java.pt.Entao;
-import io.cucumber.java.pt.Quando;
 
-public class StepsDefinition {
+import io.cucumber.java.pt.Dado;
+import io.cucumber.java.pt.Quando;
+import practice.contexto.TestContext;
+import practice.telas.TelaLogin;
+import practice.telas.TelaPrincipal;
+
+
+public class LoginSteps {
+
+    private final TestContext testContext;
+
+    public LoginSteps(final TestContext testContext) {
+        this.testContext = testContext;
+    }
 
     @Dado("que acessei o site {string} com sucesso")
     public void que_acessei_o_site_com_sucesso(String url) {
@@ -26,6 +33,7 @@ public class StepsDefinition {
     public void preencho_o_campo_email(String email) throws Exception {
         TelaLogin tela = new TelaLogin();
         tela.preencherCampoEmail(email);
+        testContext.setEmail(email);
     }
 
     @Quando("preencho o campo password com {string}")
@@ -39,9 +47,5 @@ public class StepsDefinition {
         TelaLogin tela = new TelaLogin();
         tela.clicarBotaoSignIn();
     }
-    @Entao("o sistema permite o login")
-    public void o_sistema_permite_o_login() throws Exception {
-        TelaMyAccount tela = new TelaMyAccount();
-        tela.validarLogin();
-    }
+
 }
