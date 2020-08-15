@@ -1,4 +1,4 @@
-#language : pt
+#language:pt
 
   Funcionalidade: Testar acesso ao site automation practice e navegação por ele
 
