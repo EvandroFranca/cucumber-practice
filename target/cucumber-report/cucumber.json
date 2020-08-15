@@ -1,0 +1,119 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2020-08-15T04:14:19.158Z",
+        "line": 6,
+        "name": "Verificar se o sistema permite efetuar login",
+        "description": "",
+        "id": "testar-acesso-ao-site-automation-practice-e-navegação-por-ele;verificar-se-o-sistema-permite-efetuar-login",
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 16955000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "que acessei o site \"http://www.automationpractice.com\" com sucesso",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://www.automationpractice.com\"",
+                  "offset": 19
+                }
+              ],
+              "location": "cucumber.steps.StepsDefinition.que_acessei_o_site_com_sucesso(java.lang.String)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 2415000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "que acessei a tela de login",
+            "match": {
+              "location": "cucumber.steps.StepsDefinition.que_acessei_a_tela_de_login()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 894000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "preencho o campo email com \"evs.ftw@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"evs.ftw@gmail.com\"",
+                  "offset": 27
+                }
+              ],
+              "location": "cucumber.steps.StepsDefinition.preencho_o_campo_email(java.lang.String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 764000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "preencho o campo password com \"12345\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"12345\"",
+                  "offset": 30
+                }
+              ],
+              "location": "cucumber.steps.StepsDefinition.preencho_o_campo_password(java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 2258000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "clico no botao login",
+            "match": {
+              "location": "cucumber.steps.StepsDefinition.clico_no_botao_login()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 612000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "o sistema permite o login",
+            "match": {
+              "location": "cucumber.steps.StepsDefinition.o_sistema_permite_o_login()"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      }
+    ],
+    "name": "Testar acesso ao site automation practice e navegação por ele",
+    "description": "",
+    "id": "testar-acesso-ao-site-automation-practice-e-navegação-por-ele",
+    "keyword": "Funcionalidade",
+    "uri": "file:src/test/resources/cucumber/features/automation_practice.feature",
+    "tags": []
+  }
+]
