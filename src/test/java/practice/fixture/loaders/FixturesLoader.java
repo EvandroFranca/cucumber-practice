@@ -1,11 +1,9 @@
-package practice.util;
+package practice.fixture.loaders;
 
 import br.com.six2six.fixturefactory.loader.FixtureFactoryLoader;
-import org.junit.BeforeClass;
 
-public class TestSetup {
+public class FixturesLoader {
 
-    @BeforeClass
     public static void carregarTemplates() {
         FixtureFactoryLoader.loadTemplates("practice.fixture.templates");
     }

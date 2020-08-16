@@ -3,8 +3,8 @@ package practice.fixture.templates;
 import br.com.six2six.fixturefactory.Fixture;
 import br.com.six2six.fixturefactory.Rule;
 import br.com.six2six.fixturefactory.loader.TemplateLoader;
-import org.apache.commons.lang.RandomStringUtils;
 import practice.api.models.UserDto;
+import practice.util.Utils;
 
 public class UserTemplate implements TemplateLoader {
 
@@ -12,8 +12,8 @@ public class UserTemplate implements TemplateLoader {
 
     public void load() {
         Fixture.of(UserDto.class).addTemplate(DADOS_VALIDOS, new Rule() {{
-            add("id", random(Integer.class, range(1, 200)));
-            add("userName", RandomStringUtils.randomAlphabetic(5));
+            add("id", Utils.gerarNumeroAleatorio(1, 200));
+            add("userName", Utils.gerarStringAleatoria(5));
             add("firstName", "Evandro");
             add("lastName", "Sampaio");
             add("email", "evs.ftw@gmail.com");
