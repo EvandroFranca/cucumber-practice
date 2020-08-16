@@ -33,7 +33,6 @@ public class LoginSteps {
     public void preencho_o_campo_email(String email) throws Exception {
         TelaLogin tela = new TelaLogin();
         tela.preencherCampoEmail(email);
-        testContext.setEmail(email);
     }
 
     @Quando("preencho o campo password com {string}")

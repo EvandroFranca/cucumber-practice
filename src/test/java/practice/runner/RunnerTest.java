@@ -3,15 +3,16 @@ package practice.runner;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
+import practice.util.TestSetup;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
         plugin = {"pretty", "json:target/cucumber-report/cucumber.json"},
         features = {"src/test/resources/features"},
         glue = {"practice/steps"},
-        //junit = "--step-notifications",
-        snippets = CucumberOptions.SnippetType.CAMELCASE
+        snippets = CucumberOptions.SnippetType.CAMELCASE,
+        tags = "@api_user"
                 )
 
-public class RunnerTest {
+public class RunnerTest extends TestSetup {
 }

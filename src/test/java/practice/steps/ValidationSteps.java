@@ -1,6 +1,5 @@
 package practice.steps;
 
-
 import io.cucumber.java.pt.Entao;
 import practice.contexto.TestContext;
 import practice.telas.TelaMyAccount;
@@ -18,8 +17,15 @@ public class ValidationSteps {
     public void o_sistema_permite_o_login() throws Exception {
         TelaMyAccount tela = new TelaMyAccount();
         tela.validarLogin();
+    }
 
-        System.out.println("Testando picocontainer para email: " + testContext.getEmail());
-        System.out.println("Testando picocontainer para password: " + testContext.getPassword());
+    @Entao("a API retorna mensagem de sucesso")
+    public void aAPIRetornaMensagemDeSucesso() {
+        testContext.getUserResponse().statusCode(200);
+    }
+
+    @Entao("a API retorna mensagem de erro de requisição")
+    public void aAPIRetornaMensagemDeErroDeRequisicao() {
+        testContext.getUserResponse().statusCode(400);
     }
 }
